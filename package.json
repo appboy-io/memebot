@@ -1,0 +1,13 @@
+{
+  "name": "meme-bot",
+  "version": "1.0.0",
+  "description": "First Discord Bot",
+  "main": "bot.js",
+  "author": "Decrypter",
+  "dependencies": {
+    "discord.io": "^2.5.3",
+    "discord.js": "^12.2.0",
+    "node-fetch": "^2.6.0",
+    "winston": "^3.3.2"
+  }
+}
