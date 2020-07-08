@@ -1,4 +1,4 @@
-## **_Dank Meme Bot_**
+# **_Dank Meme Bot_**
 
 Need a discord bot to pull media from your favorite message board? Anything from webms to pdfs can be pulled using this bot. It currently only supports a few message boards, but that will increase in the future. If you'd like to contribute, don't hesitate to make a branch, commit changes, and then create a pull request. I'm looking forward to what we can create.
 
