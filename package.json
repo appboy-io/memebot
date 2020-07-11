@@ -9,5 +9,8 @@
     "discord.js": "^12.2.0",
     "node-fetch": "^2.6.0",
     "winston": "^3.3.2"
+  },
+  "scripts": {
+    "start": "node bot.js"
   }
 }
