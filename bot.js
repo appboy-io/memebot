@@ -12,8 +12,8 @@ if (!botToken) {
 
 const supportedMessageBoards = new Map([
   ["4chan", "https://a.4cdn.org/boards.json"],
-  ["7chan"],
-  ["lainchan"],
+  //["7chan"],
+  //["lainchan"],
 ]);
 
 const catalogLinksMap = new Map([
@@ -38,7 +38,22 @@ client.on("message", async (receivedMessage) => {
 
     switch (cmd) {
       case "ping":
-        receivedMessage.channel.send("Welcome to the booty verse buddy");
+        receivedMessage.channel.send(
+          "Hi, I'm DankMemeBot. It's a pleasure to meet you. Type \"!commands to learn more about what I can do"
+        );
+        break;
+      case "info":
+        receivedMessage.channel.send(
+          "I specialize in pulling info from message boards. Currently I support: " +
+            [...supportedMessageBoards.keys()].join(", ") +
+            "\n" +
+            "Here are my commands: \n" +
+            "!ping - General introduction from the bot \n" +
+            "!command - Command menu \n" +
+            "!boards - Get current list of supported message boards \n" +
+            "!board <chosen board> - Get list of categories in message board (i.e: wsg, cooking, cyb) \n" +
+            "!board <chosen board> <chosen category> - Get a list of all active threads in chosen category \n"
+        );
         break;
       case "boards":
         let boardsList = [...supportedMessageBoards.keys()].join(", ");
