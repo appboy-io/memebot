@@ -12,8 +12,8 @@ if (!botToken) {
 
 const supportedMessageBoards = new Map([
   ["4chan", "https://a.4cdn.org/boards.json"],
-  ["7chan"],
-  ["lainchan"],
+  //["7chan"],
+  //["lainchan"],
 ]);
 
 const catalogLinksMap = new Map([
