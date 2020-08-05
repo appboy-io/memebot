@@ -10,6 +10,12 @@ I grew up on message boards and IRC. I've learned a plethora of things revelant 
 
 I don't see any limitations on boards to add. Go nuts, I'm open to anything.
 
+## **Add bot to your server**
+
+If you're interested in adding this bot to your discord server, click the image below.
+
+<a href="https://discord.com/oauth2/authorize?client_id=724848897515847790&scope=bot" target="_blank" rel="noopener"><img src="assets/dank-meme-bot.png" width="100"></a>
+
 ## **How to run?**
 
 You'll need a few things to get this up an running. So here are the steps:
