@@ -31,7 +31,10 @@ client.login(botToken);
 
 //Client commands
 client.on("message", async (receivedMessage) => {
-  if (receivedMessage.content.substring(0, 1) == "!") {
+  if (
+    receivedMessage.content.substring(0, 1) == "!" &&
+    receivedMessage.content.length > 1
+  ) {
     var args = receivedMessage.content.substring(1).split(" ");
     var cmd = args[0];
     args = args.splice(1);
@@ -65,7 +68,7 @@ client.on("message", async (receivedMessage) => {
         if (args.length > 1) {
           console.log("fetching threads");
           let selectedBoard = args[0];
-          let board = args[1];
+          let board = args[1].toLowerCase();
           let threadList = await fetchCatalog(selectedBoard, board);
 
           receivedMessage.channel.send(
@@ -90,9 +93,6 @@ client.on("message", async (receivedMessage) => {
         }
         break;
       default:
-        receivedMessage.channel.send(
-          "The booty verse accepts many things, but not that command"
-        );
         break;
     }
   }
